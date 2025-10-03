@@ -12,7 +12,7 @@ Diagram
 
 Penjelasan Atribut dan Metode Setiap Kelas
 
-1. Person.cpp
+1. Person
    Kelas dasar untuk merepresentasikan individu.
    Atribut:
    nama: Nama individu (string).
@@ -25,7 +25,7 @@ Penjelasan Atribut dan Metode Setiap Kelas
    Getter dan Setter: Untuk mengakses dan memodifikasi setiap atribut.
    operator=: Operator assignment untuk menyalin data dari objek Person lain.
 
-2. TempatUsaha.cpp
+2. TempatUsaha
    Kelas dasar untuk merepresentasikan tempat usaha.
    Atribut:
    namaTempat: Nama tempat usaha (string).
@@ -38,7 +38,7 @@ Penjelasan Atribut dan Metode Setiap Kelas
    Constructor: Menginisialisasi objek TempatUsaha.
    Getter dan Setter: Untuk mengakses dan memodifikasi setiap atribut.
 
-3. Employee.cpp
+3. Employee
    Kelas yang merepresentasikan seorang karyawan.
    Atribut:
    id: ID karyawan (integer).
@@ -54,7 +54,7 @@ Penjelasan Atribut dan Metode Setiap Kelas
    getTempatKerja(): Mengembalikan pointer ke objek TempatUsaha.
    operator=: Operator assignment.
 
-4. Pengusaha.cpp
+4. Pengusaha
    Kelas yang merepresentasikan seorang pengusaha.
    Atribut:
    id: ID pengusaha (integer).
@@ -67,7 +67,7 @@ Penjelasan Atribut dan Metode Setiap Kelas
    hitungProfit(): Menghitung profit dengan mengalikan pendapatan dengan 0.3.
    operator=: Operator assignment.
 
-5. OwnerEmployee.cpp
+5. OwnerEmployee
    Kelas untuk seseorang yang merupakan karyawan sekaligus pengusaha.
    Atribut:
    idOE: ID untuk OwnerEmployee (integer).
@@ -79,7 +79,7 @@ Penjelasan Atribut dan Metode Setiap Kelas
    hitungTotalKompensasi(): Menghitung total kompensasi gabungan dari gaji tahunan (sebagai karyawan) dan profit (sebagai pengusaha).
    operator=: Operator assignment.
 
-6. Aula.cpp
+6. Aula
    Kelas turunan dari TempatUsaha untuk jenis usaha "aula".
    Atribut Tambahan:
    luas: Luas aula (double).
@@ -88,7 +88,7 @@ Penjelasan Atribut dan Metode Setiap Kelas
    hargaSewa: Harga sewa (double).
    tipe: Tipe aula (string).
 
-7. GorOlahraga.cpp
+7. GorOlahraga
    Kelas turunan dari TempatUsaha untuk jenis usaha "gedung olahraga".
    Atribut Tambahan:
    jenisOlahraga: Jenis olahraga yang dapat dilakukan (string).
@@ -96,7 +96,7 @@ Penjelasan Atribut dan Metode Setiap Kelas
    skala: Skala gedung, contoh: "nasional" atau "lokal" (string).
    hargaSewa: Harga sewa (double).
 
-8. TokoKue.cpp
+8. TokoKue
    Kelas turunan dari TempatUsaha untuk jenis usaha "toko kue".
    Atribut Tambahan:
    namaProduk: Nama produk utama (string).
@@ -109,7 +109,7 @@ Desain program ini menggunakan konsep pewarisan untuk menciptakan hierarki kelas
 -> Pewarisan Tunggal:
 -> Kelas Person adalah kelas dasar (base class).
 -> Kelas Employee dan Pengusaha mewarisi atribut dan metode dari Person.
--> Kelas TempatUsaha juga merupakan kelas dasar yang diwarisi oleh Aula, GorOlahraga, dan TokoKue. Ini memungkinkan setiap jenis tempat usaha memiliki atribut spesifiknya sendiri sambil tetap mempertahankan atribut dasar dari TempatUsaha.-
+-> Kelas TempatUsaha juga merupakan kelas dasar yang diwarisi oleh Aula, GorOlahraga, dan TokoKue. Ini memungkinkan setiap jenis tempat usaha memiliki atribut spesifiknya sendiri sambil tetap mempertahankan atribut dasar dari TempatUsaha.
 
     -> Pewarisan Majemuk (Multiple Inheritance):
 
